@@ -1,0 +1,45 @@
+import 'dart:io';
+class tech{
+  
+  
+  void addStacks(stack){
+    int top=-1;
+    int n=10;
+    if(top>=n-1)
+    {
+        stdout.writeln("\n\tSTACK is over flow");
+         
+    }
+    else
+    {
+        stdout.writeln(" Enter ur interest/expertise:");
+        String x = stdin.readLineSync();
+        top++;
+        stack[top]=x;
+    }
+    
+  }
+  void setMentorOrLearner(status){
+    print(status);
+    
+  }
+  void setAvailableTime(){
+    int time;
+    print(time);
+    
+  }
+  
+}
+void main(){
+  String status;
+  tech tech1 = tech(); 
+  var stack = new List(10);
+  tech1.addStacks(stack);
+  tech1.setMentorOrLearner(status);
+  
+  if(status=="mentor")
+  {
+    tech1.setAvailableTime();
+  
+  }
+}
